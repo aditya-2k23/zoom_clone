@@ -86,8 +86,22 @@
 .cl-internal-oaq42g,
 .cl-internal-1d1wx0b,
 .cl-internal-552i73,
-.cl-internal-cfgqpm {
+.cl-internal-cfgqpm,
+.cl-userButtonPopoverActionButton {
   color: white;
+}
+
+.cl-internal-1nn89fl {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.cl-internal-zpbffa {
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.cl-internal-1yphags:hover>button {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .cl-internal-hrrh4y {
@@ -109,10 +123,6 @@
 
 .cl-footer {
   padding: 0;
-}
-
-.cl-userButtonPopoverActionButton {
-  color: white;
 }
 
 /* =============================== */
