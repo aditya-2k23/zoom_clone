@@ -40,6 +40,8 @@ const MeetingTypeList = () => {
         handleClick={() => setMeetingState("isJoiningMeeting")}
         className="bg-yellow-1"
       />
+    
+      <MeetingModal /> {/*Import this file from components*/}
     </section>
   );
 };
