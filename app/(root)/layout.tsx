@@ -1,5 +1,14 @@
 import StreamVideoProvider from "@/providers/StreamClientProvider";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
+
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "ZOOM - Clone",
+  description: "Video Calling with FRIENDS",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
+};
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
