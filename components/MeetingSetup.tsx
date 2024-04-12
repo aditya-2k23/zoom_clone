@@ -47,7 +47,7 @@ const MeetingSetup = ({
         <DeviceSettings />
       </div>
       <Button
-        className="rounded-md bg-green-500 px-4 py-2.5"
+        className="rounded-md bg-green-500 px-4 py-2.5 font-bold"
         onClick={() => {
           call.join();
 

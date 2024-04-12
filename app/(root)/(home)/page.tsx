@@ -3,15 +3,16 @@ import MeetingTypeList from "@/components/MeetingTypeList";
 const Home = () => {
   const now = new Date();
 
-  const time = now.toLocaleTimeString("ind", {
+  const time = now.toLocaleTimeString("INDIA", {
     hour: "2-digit",
     minute: "2-digit",
+    hour12: false,
   });
-  const date = now.toLocaleDateString("ind", {
+  const date = now.toLocaleDateString("INDIA", {
     month: "long",
     day: "numeric",
-    year: "numeric",
-    weekday: "narrow",
+    year: "2-digit",
+    weekday: "short",
   });
 
   return (
