@@ -20,7 +20,11 @@ const Home = () => {
 
   const { upcomingCalls } = useGetCalls();
   const upcomingMeetingTime = upcomingCalls.map((call) =>
-    call.state.startsAt?.toLocaleTimeString("INDIA")
+    call.state.startsAt?.toLocaleTimeString("INDIA", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    })
   );
   return (
     <section className="flex size-full flex-col gap-5 text-white">
@@ -28,7 +32,7 @@ const Home = () => {
         <div className="flex h-full flex-col justify-between max-md:px-5 max-md:py-8 lg:p-11">
           <h2 className="glassmorphism max-w-[273px] rounded py-2 text-center text-base font-normal">
             {upcomingCalls
-              ? `Upcoming Meeting at: ${upcomingMeetingTime[0]}`
+              ? `Upcoming Meeting at: ${upcomingMeetingTime[1]}`
               : "No upcoming meeting"}
           </h2>
           <div className="flex flex-col gap-2">
