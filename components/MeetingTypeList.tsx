@@ -10,6 +10,7 @@ import Loader from "./Loader";
 import { Textarea } from "./ui/textarea";
 import ReactDatePicker from "react-datepicker";
 import { useToast } from "./ui/use-toast";
+import { Input } from "./ui/input";
 // import { Input } from "./ui/input";
 
 const initialValues = {
@@ -162,11 +163,11 @@ const MeetingTypeList = () => {
         buttonText="Join Meeting"
         handleClick={() => router.push(values.link)}
       >
-        {/* <Input
+        <Input
           placeholder="Meeting link"
           onChange={(e) => setValues({ ...values, link: e.target.value })}
           className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
-        /> */}
+        />
       </MeetingModal>
 
       <MeetingModal
