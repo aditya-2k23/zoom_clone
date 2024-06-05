@@ -13,6 +13,12 @@ See the App [Live](https://zoom-clone-aditya-2k23s-projects.vercel.app/) 🥰
 - Video chat with others
 - Schedule a meet for later
 
+---
+
+![Home](./public/images/home.png)
+
+---
+
 ## Tech Stack
 
 - [Next.js](https://nextjs.org/)
